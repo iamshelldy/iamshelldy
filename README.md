@@ -1,16 +1,47 @@
-## Hi there 👋
+# Hi there 👋
 
-<!--
-**iamshelldy/iamshelldy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```python
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
-Here are some ideas to get you started:
+from .workers.it import Sof
+from .greetings import greetings_map
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+class Me(SoftwareEngineer):
+    def __init__(self) -> None:
+        super().__init__(
+            name="Denis Raetskii",
+            languages_spoken=["ru", "uk", "en"],
+            stack=["Python", "FastAPI", "Flask", "Django", "SQLAlchemy"],
+            hobbies=[
+                "learning new technologies", "building applications",
+                "solving problems", "pastel painting", "hiking",
+            ],
+        )
+
+    def greet(self, language_code: str = "en") -> None:
+        if language_code in self.languages_spoken:
+            print(greetings_map.get(language_code))
+        else:
+            print(greetings_map.get("en"))
+
+
+me = Me()
+me.greet()
+```
+
+## About Me
+* 👨‍💻 Software Engineer with a passion for building efficient and scalable applications.
+* 🌐 Languages: Russian (native), Ukrainian (native), English (Elementary), Swedish (Beginner).
+* 💻 Tech Stack:
+  * Back-end: Python, FastAPI, Flask, Django, SQLAlchemy.
+  * Front-end: Basics of HTML, CSS, and JavaScript.
+  * Other Tools: Redis, Pandas, NumPy, Jinja2, SQLite, PostgreSQL, MongoDB.
+* 🎯 Focus Areas: API design, data processing, software architecture, and web development.
+
+## How to Reach Me
+* ➤ Telegram: https://t.me/iamshelldy
+* 📫 Email: iamshelldy@gmail.com
+* 🔗 LinkedIn: https://linkedin.com/in/denis-raetskii-30564a2b3
+
