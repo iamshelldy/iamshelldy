@@ -4,7 +4,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from .workers.it import Sof
+from .workers.it import SoftwareEngineer
 from .greetings import greetings_map
 
 
