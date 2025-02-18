@@ -21,10 +21,7 @@ class Me(SoftwareEngineer):
         )
 
     def greet(self, language_code: str = "en") -> None:
-        if language_code in self.languages_spoken:
-            print(greetings_map.get(language_code))
-        else:
-            print(greetings_map.get("en"))
+        print(greetings_map.get(language_code, greetings_map["en"]))
 
 
 me = Me()
