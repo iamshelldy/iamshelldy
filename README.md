@@ -19,13 +19,13 @@ class Me(SoftwareEngineer):
                 "solving problems", "pastel painting", "hiking",
             ],
         )
+        self.greet()
 
     def greet(self, language_code: str = "en") -> None:
         print(greetings_map.get(language_code, greetings_map["en"]))
 
 
 me = Me()
-me.greet()
 ```
 
 ## About Me
